@@ -1,0 +1,68 @@
+@import './base.css';
+
+#app {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: #1f3f72;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #2e75b6;
+}
+
+body {
+  background: #fffaf4;
+}
+
+main {
+  min-height: 100vh;
+}
+
+button,
+.primary-btn,
+.secondary-btn {
+  font: inherit;
+}
+
+button {
+  border: 1px solid #1f3f72;
+  background: transparent;
+  color: #1f3f72;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(46, 117, 182, 0.05);
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1f3f72;
+  border-radius: 0;
+  padding: 0.8rem 1.2rem;
+  color: #1f3f72;
+  background: transparent;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  background: rgba(46, 117, 182, 0.05);
+}
+
+@media (min-width: 1024px) {
+  #app {
+    padding: 3rem 2rem;
+  }
+}
